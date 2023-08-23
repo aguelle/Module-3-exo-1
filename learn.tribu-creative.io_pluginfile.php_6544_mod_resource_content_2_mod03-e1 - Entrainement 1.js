@@ -56,9 +56,18 @@ console.log(getValueIncrease(5));
 console.log(
   "5/ Implémentez une fonction qui retourne la valeur maximale entre 3 valeurs."
 );
+function getMaxValue(a,b,c) {
+if (a<b && a<c){
+  return a
+} else if (b<a && b<c){
+  return b
+}
+else {
+  return c
+}
+}
 
-console.log();
-console.log();
+console.log(getMaxValue(3,2,1));
 
 /* ------------------------------------------------------*/
 
