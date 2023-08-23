@@ -34,17 +34,17 @@ console.log(
 
 let table = [1, 2, 3, 'coucou'];
 
-function lastValueOfTable (value) {
+function getLastValueOfTable (value) {
   return value[3];
 }
-console.log(lastValueOfTable(table));
+console.log(getLastValueOfTable(table));
 
 /* ------------------------------------------------------*/
 
 console.log(
   "4/ Implémentez une fonction qui retourne la valeur en entrée augmentée d'un pourcentage d'augmentation."
 );
-
+ 
 console.log();
 console.log();
 
