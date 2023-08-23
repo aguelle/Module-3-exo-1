@@ -32,10 +32,10 @@ console.log(
   "3/ Implémentez une fonction qui retourne la dernière valeur d'un tableau."
 );
 
-let table = [1, 2, 3, 4];
+let table = [1, 2, 3, 'coucou'];
 
-function lastValueOfTable(value) {
-  return;
+function lastValueOfTable (value) {
+  return value[3];
 }
 console.log(lastValueOfTable(table));
 
