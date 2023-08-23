@@ -32,9 +32,9 @@ console.log(
   "3/ Implémentez une fonction qui retourne la dernière valeur d'un tableau."
 );
 
-let table = [1, 2, 3, 'coucou'];
+let table = [1, 2, 3, "coucou"];
 
-function getLastValueOfTable (value) {
+function getLastValueOfTable(value) {
   return value[3];
 }
 console.log(getLastValueOfTable(table));
@@ -44,9 +44,12 @@ console.log(getLastValueOfTable(table));
 console.log(
   "4/ Implémentez une fonction qui retourne la valeur en entrée augmentée d'un pourcentage d'augmentation."
 );
- 
-console.log();
-console.log();
+let increase = 13;
+
+function getValueIncrease(value) {
+  return value * (increase / 100 + 1);
+}
+console.log(getValueIncrease(5));
 
 /* ------------------------------------------------------*/
 
