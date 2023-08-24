@@ -56,45 +56,71 @@ console.log(getValueIncrease(5));
 console.log(
   "5/ Implémentez une fonction qui retourne la valeur maximale entre 3 valeurs."
 );
-function getMaxValue(a,b,c) {
-if (a<b && a<c){
-  return a
-} else if (b<a && b<c){
-  return b
-}
-else {
-  return c
-}
+function getMaxValue(a, b, c) {
+  if (a < b && a < c) {
+    return a;
+  } else if (b < a && b < c) {
+    return b;
+  } else {
+    return c;
+  }
 }
 
-console.log(getMaxValue(3,2,1));
+console.log(getMaxValue(3, 2, 1));
 
 /* ------------------------------------------------------*/
 
 console.log(
   "6/ Implémentez une fonction qui retourne la somme des valeurs d'un tableau."
 );
+let tableX = [10, 10, 10, 10];
+let tableY = [100, 100];
+let totalSum = 0;
+for (let value in tableX) {
+  totalSum += tableX[value];
+}
+// console.log(totalSum)
 
-console.log();
-console.log();
+function getSumValueTable() {
+  return totalSum;
+}
+
+console.log(getSumValueTable([tableX]));
+console.log(getSumValueTable([tableY]));
 
 /* ------------------------------------------------------*/
 
 console.log(
   "7/ Implémentez une fonction qui retourne une valeur aléatoire entre 0 et un nombre."
 );
+let a = 0;
+function getRandomValue(a,b) {
+return Math.floor(Math.random(a,b)*10)
+}
 
-console.log();
-console.log();
+console.log(getRandomValue(a,10));
 
 /* ------------------------------------------------------*/
 
 console.log(
   "8/ Implémentez une fonction qui retourne la moyenne des valeurs d'un tableau."
 );
+let tableZ = [20,10, 10];
 
-console.log();
-console.log();
+let Sum = 0;
+let average = 0;
+for (let value in tableZ) {
+ Sum += tableZ[value];
+ average = Sum/tableZ.length
+}
+// console.log(totalSum)
+
+function getAverageValueTable() {
+  return average;
+}
+
+console.log(getAverageValueTable([tableZ]));
+
 
 /* ------------------------------------------------------*/
 
